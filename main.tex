@@ -1,0 +1,250 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+%\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage[a4paper, top=1cm, bottom=0.0cm, left=1cm, right=1cm]{geometry}
+\usepackage[]{hyperref}
+\usepackage{xcolor}
+%\usepackage{graphicx}
+%\usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{makecell}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Alejandro}{Fontan Villacampa}{Visual SLAM Engineer}{white}
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+
+\begin{center}
+\hspace*{0.6cm}
+\vspace*{0.5cm}
+\begin{minipage}[t]{0.3\textwidth}
+\roundpic{fontan_photo.jpg}%
+\end{minipage}
+\end{center}
+
+\infobubble{\faChrome}{cvgreen}{white}{\href{https://alejandrofontan.github.io/}{Personal Website}}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize I'm a Visual SLAM Engineer with expertise in Computer Vision, Robotics, AR/VR, and Machine Learning. Passionate about mentorship and collaboration. My career is dedicated to exploring and shaping the future of Visual SLAM and Localization.}
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Alejandro Fontan Villacampa
+
+\textbf{fontanvillacampa@gmail.com}
+
+\textbf{alejandro.fontan@qut.edu.au}
+
+\textbf{+61 452 200 234}
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+Visual SLAM ~/~  Localization ~/~ Visual Odometry ~/~ VPR
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
+
+\bigskip
+
+\bg{cvgreen}{white}{Links}\\[0.5em]
+\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/alejandrofontan}{GitHub}}
+\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/alejandro-fontan-villacampa-994a1794/}{LinkedIn}}
+\infobubble{\faGraduationCap}{cvgreen}{white}
+{\href{https://scholar.google.com/citations?user=SDtnGogAAAAJ&hl=es}{Scholar}}
+\infobubble{\faTwitter}{cvgreen}{white}{\href{https://twitter.com/AFontanVillcmp}{@AFontanVillcmp}}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Short Resumé}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2022--2027}{Research Fellow}{Queensland University of Technology}{Brisbane, Australia \color{cvred}}{At the QUT Centre for Robotics, I lead research on Visual SLAM. Recent highlights include \textit{AnyFeature-VSLAM}, a flexible framework for integrating diverse feature types into SLAM pipelines, and a novel \textit{ground-truth-free tuning} method for robust SLAM/SfM evaluation. I also supervise PhD students and mentor our research team, focusing on Visual SLAM and Localization problems.\href{https://research.qut.edu.au/qcr/people/alejandro-fontan-villacampa/}{\hspace{0.5pt} \faUniversity \hspace{0.5pt} QUT Profile}}{qut.jpg} \\
+    \cvevent{2018--2022}{PhD Information-Driven Navigation - Associate Researcher}{German Aerospace Center (DLR) }{Munich, Germany \color{cvred}}{Pioneered \textit{Information-driven direct rgb-d odometry} and \textit{Semi-direct SID-SLAM} to improve visual odometry for mobile and aerial robots in planetary exploration. Deployed and evaluated on a custom DLR multicopter, contributing to its development as a research platform. \href{https://rmc.dlr.de/rm/en/staff/alejandro.fontanvillacampa/}{\hspace{0.5pt} \faPlane \hspace{0.5pt} DLR Profile}}{DLR_logo.png} \\
+    \cvevent{2017--2018}{Internship as Software Engineer}{Wikitude GmbH}{Salzburg, Austria \color{cvred}}{Developed a computer vision AR library for mobile OS like Android and iOS, focusing on implementing and testing on devices new visual-inertial SLAM algorithms, \textit{OKVIS} and \textit{VINS-Mono}. Created calibration solutions for phone cameras and IMUs' extrinsics. \href{https://www.wikitude.com/}{\hspace{0.5pt} \faMobile \hspace{0.5pt} Wikitude Webpage} }{wikitude-sdk.png}
+\end{tabular}
+\vspace{1em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Latest Projects}
+\begin{tabular}{l p{0.6\textwidth} c} 
+     \includegraphics[height=0.35cm]{logo_vslamlab.png} \href{https://github.com/alejandrofontan/VSLAM-LAB}{VSLAM-LAB}:  A Comprehensive Framework \\ 
+     for Visual SLAM Baselines and Datasets. \href{https://github.com/alejandrofontan/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay}\\
+     \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{AnyFeature-VSLAM}:  Automating the Usage of \\ Any Chosen Feature into Visual SLAM \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub} \\
+     \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{Bommie Toolkit}:  Automated 3D reconstruction \\tool for coral reefs \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\ 
+     \\
+    \textbf{Workshop Organizer:} \\
+    \href{https://alejandrofontan.github.io/Mapping-the-Reef-RSS26/}{Mapping-the-Reef-@RSS26}: \textbf{1st Organizer} \\ 
+    \href{https://visual-slam-lab.github.io/unifying-visual-slam/}{The-Good-Reviewer-@ICRA26}: \textbf{1st Organizer} \\ 
+     \href{https://alejandrofontan.github.io/The-Good-Reviewer-ICRA26/}{Unifying-SLAM@RSS25}: \textbf{1st Organizer} \href{https://visual-slam-lab.github.io/unifying-visual-slam/}{\faChrome} \href{https://www.youtube.com/playlist?list=PLm2jyT49-dYAZKv2aK-XLch3zqg8bOAks}{\faYoutubePlay}\\
+\end{tabular}
+\vspace{0.5em}
+\section*{Education}
+\begin{tabular}{r p{0.7\textwidth} c}
+    \cvdegree{\footnotesize 2025}{CV for Spatial Intelligence }{ICVSS}{Summer School \color{headerblue}}{}{icvss.jpeg} \\
+    \cvdegree{\footnotesize 2018/22}{PhD System Engineering and Programming} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\
+    \cvdegree{\footnotesize 2011/17}{Degree \& Master \newline of Industrial Engineering}{EINA}{Univ. Zaragoza \color{headerblue}}{}{eina_logo.png} 
+\end{tabular}
+\vspace{-0.75em}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.6em}}l}
+     \bg{skilllabelcolour}{iconcolour}{C++ / Python} &  \bg{skilllabelcolour}{iconcolour}{ROS / Matlab/ \LaTeX}\\
+     \bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi} & \barrule{0.50}{0.5em}{cvgreen} \\
+     %\bg{skilllabelcolour}{iconcolour}{Matlab} & \barrule{0.4}{0.5em}{cvpurple} \\
+     %\bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.4}{0.5em}{cvpurple} \\
+\end{tabular}
+\vspace{0.5em}
+% \section*{Languages}
+% \begin{tabular}{l | ll}
+% \textbf{Spanish} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+% \textbf{English} & C1 & \pictofraction{\faCircle}{cvgreen}{4}{white}{1}{\tiny} \\
+% \end{tabular}
+% \vspace{0.5em}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.33\textwidth}
+\section*{Main Publications}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    arXiv 25 & \emph{Pixi: Unified Software Development and Distribution for Robotics \& AI}. \href{https://arxiv.org/abs/2511.04827}{\faFilePdfO} \\
+    IROS 25 & \emph{VSLAM-LAB: A Comprehensive Framework for Visual SLAM Methods and Datasets}. \href{https://arxiv.org/abs/2504.04457}{\faFilePdfO} \href{https://github.com/alejandrofontan/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \\
+    arXiv 25 & \emph{Look Ma, No Ground Truth! Ground-Truth-Free Tuning of SfM and VSLAM}. \href{https://arxiv.org/pdf/2412.01116}{\faFilePdfO}  \\
+    IROS 25 & \emph{Image-Based Relocalization and Alignment for Long-Term Monitoring of Dynamic Underwater Environments}. \href{https://arxiv.org/pdf/2503.04096}{\faFilePdfO} \href{https://github.com/bev-gorry/underloc}{\faGithub} \\
+    RSS 24 & \emph{AnyFeature-VSLAM: Automating the Usage of Any Feature into Visual SLAM}. \href{https://www.roboticsproceedings.org/rss20/p084.pdf}{\faFilePdfO} \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub} \\
+    ICRA 24 & \emph{Adaptive Outlier Thresholding for Bundle Adjust. in VSLAM}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10610433}{\faFilePdfO} \\
+    \makecell[l]{ BMVC 23 \\ } & \makecell[l]{ \emph{Motion-Bias-Free Feature-}\\ \emph{Based SLAM.}} \href{https://arxiv.org/pdf/2309.06792}{\faFilePdfO} \\
+    RA-L 23 & \emph{SID-SLAM Semi-Direct Information Driven RGB-D SLAM}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10058038}{\faFilePdfO} \\
+    RA-L 22 & \emph{A Model for Multi-View Residual Covariances based on Perspective Deformation}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9681286}{\faFilePdfO} \\
+    ICRA 21 & \emph{DOT: Dynamic Object Track.}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9561452}{\faFilePdfO} \href{https://youtu.be/9hWChyQGKJk?si=OkMBDGbpk28x3HI9}{\faYoutubePlay} \\
+    JFR 21 & \emph{The MADMAX data set for visual‐inertial rover navigation on Mars}. \href{https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.22016}{\faFilePdfO} \\
+   \makecell[c]{ CVPR 20 \\ Oral}& \makecell[l]{ \emph{Information-Driven Direct}\\ \emph{RGB-D Odometry.}}  \href{https://openaccess.thecvf.com/content_CVPR_2020/papers/Fontan_Information-Driven_Direct_RGB-D_Odometry_CVPR_2020_paper.pdf}{\faFilePdfO} \href{https://www.youtube.com/watch?v=Ja6QwYiKlu8}{\faYoutubePlay}   
+\end{tabular}
+\vspace{1em}
+\section*{Other Activities}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    &\emph{IELTS Gen. Training (Score 8/9)}. \\
+    &\emph{First Aid Course \& CPR}. \\
+    &\emph{Professional Music Studies}. \\   
+\end{tabular}
+\vspace{0.5em}
+\end{minipage}\hfill
+
+\vfill{} % Whitespace before final footer
+
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} \small alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} \newline QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia \icon{\faPhone}{cvgreen}{} +61 /452 200 234}
+\end{center}
+\end{minipage}
+
+% \section*{Curriculum}
+% \begin{tabular}{r| p{0.5\textwidth} c}
+%     \cvevent{2022/--}{Research Fellow at Queensland University of Technology}{Research Fellow}{Brisbane, Australia \color{cvred}}{In my current role at \textbf{QUT Centre for Robotics (QCR)}, I lead groundbreaking research efforts in Computer Vision, Localization, and Visual SLAM, with the goal of contributing to top-tier conferences and journals. My focus is on creating cutting-edge solutions to address key challenges in localization, visual place recognition (VPR), motion estimation, map creation, and SLAM. These efforts are directed towards the development of advanced robotic tools designed to address real-world problems. \newline \newline In addition to my research responsibilities, I provide specialized technical mentorship to our team, focusing on Localization and Visual SLAM, and encompassing co-supervision of PhD candidates. }{qut.jpg} \\
+%     \cvevent{2018/22}{Associate Researcher at German Aerospace Center (DLR)}{Associate Researcher}{Munich, Germany \color{cvred}}{Conception and development of efficient direct methods for visual odometry of mobile, especially flying robots, to assist among others in planetary exploration tasks. \newline \newline Implementation and testing of the algorithms developed in the multicopter designed at the institute, as well as other tasks related to its maintenance and development as a research platform.}{DLR_logo.png} \\
+%     \cvevent{2017/18}{Software Engineer at Wikitude GmbH}{Internship}{Salzburg, Austria \color{cvred}}{Software development for computer vision AR library for mobile operating systems (such as Android or iOS). Experimentation, test and implementation in mobile devices of new algorithms of visual-inertial SLAM. \newline \newline Search and development of online and offline calibration solutions for the extrinsics of phone’s cameras and IMUs.}{wikitude-sdk.png} \\
+% \end{tabular}
+% \vspace{3em}
+
+% \section*{Education}
+% \begin{tabular}{r| p{0.5\textwidth} c}
+%     \cvevent{2018/22}{Information-Driven Navigation}{PhD System Engineering \& Programming}{Munich, Germany \color{cvred}}{{\color{violet}\textbf{Advisor}}: \textbf{Dr. Javier Civera}, University Zaragoza \newline {\color{violet}\textbf{Co-Advisor}}: \textbf{Dr. Rudolph Triebel}, Technical University Munich and DLR. \newline {\color{violet}\textbf{Presentation Committee}}: \textbf{Dr. J.M. Martínez Montiel}, University Zaragoza; \textbf{Dr. Margarita Chli}, ETH Zurich; and \textbf{Dr. Teresa Vidal-Calleja}, University of Technology Sydney. \newline  \newline My research focuses on the field of SLAM and visual odometry, addressing the open challenges in SotA related to accuracy, robustness and computational demand originated by the implementation of these algorithms in low-end platforms. \newline \newline We propose new algorithms for the emerging direct approaches, combined with Information Theory metrics to improve SLAM/VO performance. We develop new uncertainty models based on multi-view geometry to improve SLAM accuracy and information metrics consistency. \newline \newline We release open-source SID-SLAM, a complete RGB-D SLAM pipeline based on the informative combination of features and photometric measures. We recorded Conceptual RGB-D dataset, 30 RGB-D sequences with Vicon Ground Truth designed to facilitate state-of-the-art research for SLAM algorithms. \newline \newline We exploit the benefits of our geometric approach so that combined with machine learning techniques we can make possible real-time applications such as dynamic object tracking with flying vehicles and AR/VR platforms.}{logoUZ.png} \\
+%     \cvevent{2016/17}{Master of Industrial Engineering}{University of Zaragoza}{Zaragoza, Spain \color{cvred}}{7.99/10 (top 5\% of my promotion) | Major: Electronics \newline \newline \textbf{Thesis: 3D Vision for Augmented Reality. Advisor: Javier Civera} \newline Study of the state of the art of Augmented Reality techniques and experimentation in Matlab of a scene reconstruction algorithm and its implementation in real time in C++. \newline \newline
+%     These studies provide scientific and technological knowledge in multidisciplinary industrial areas . My specialty has been in the field of mechatronics with subjects in mathematics, physics, mechanics, electronics and programming.}{eina_logo.png} \\
+%     \cvevent{2011/15}{Degree in Industrial Engineering}{University of Zaragoza}{Zaragoza, Spain \color{cvred}}{7.50/10 (top 7\% of my promotion) | Major: Electronics \newline \newline \textbf{Thesis: Design of the control of a multicopter. Advisor: Javier Civera} \newline \newline
+%     These studies provide scientific and technological knowledge in multidisciplinary industrial areas . My specialty has been in the field of mechatronics with subjects in mathematics, physics, mechanics, electronics and programming.}{eina_logo.png} \\
+% \end{tabular}
+% \vspace{3em}
+
+% \section*{Publications}
+% \begin{tabular}{r| p{0.6\textwidth}}
+%     \cvPublication{2024}{Alejandro Fontan$^*$, Javier Civera and Michael Milford, Adaptive Outlier Thresholding for Bundle Adjustment in Visual SLAM.}{International Conf. on Robotics and Automation}{ICRA 2024}{State-of-the-art V-SLAM pipelines utilize robust cost functions and outlier rejection techniques to remove incorrect correspondences. However, these methods are typically fine-tuned to overfit certain benchmarks and struggle to adapt effectively to changes in the application domain or environmental conditions. This renders them impractical for many robotic applications in which robustness in a wide variety of conditions is essential. In this paper we introduce a novel distribution-based approach for online outlier rejection that reduces the necessity for scene-specific fine-tuning while simultaneously improving the overall SLAM performance.}\\
+%     \cvPublication{2023}{Alejandro Fontan$^*$, Javier Civera and Michael Milford, Motion-Bias-Free Feature-Based SLAM.}{The British Machine Vision Conference}{BMVC 2023}{For SLAM to be safely deployed in unstructured real world environments, it must possess several key properties that are not encompassed by conventional benchmarks. In this paper we propose several contributions to feature-based SLAM pipelines that remedies the motion bias problem. Removing the SLAM motion bias has significant relevance for the wide range of robotics and computer vision applications where performance consistency is important. }\\
+%     \cvPublication{2022}{Alejandro Fontan*, Riccardo Giubilato, Laura Oliva, Javier Civera and Rudolph Triebel, SID-SLAM: Semi-Direct Information-Driven RGB-D SLAM.}{IEEE Robotics and Automation Letters}{RA-L 2023}{This paper presents SID-SLAM, a complete Simultaneous Localization and Mapping (SLAM) system for RGB-D cameras. We propose a probabilistic semi-direct approach that for the first time combines tightly and indistinctly photometric and feature-based image measurements. The pipeline we implemented uses information metrics to select the most informative points and keyframes in order to reduce the computational footprint with a minimal impact in the accuracy. Moreover, in order to facilitate state-of-the-art research on semi-direct SLAM, we propose a novel, conceptual benchmark for this task composed by several simple but challenging RGB-D sequences with trajectory ground truth.} \\
+% \end{tabular}
+% \vspace{3em}
+
+% \section*{Publications}
+% \begin{tabular}{r| p{0.6\textwidth}}
+%     \cvPublication{2021}{Irene Ballester*, Alejandro Fontan*, Javier Civera, Klaus H. Strobl and Rudolph Triebel, DOT: Dynamic Object Tracking.}{International Conference on Robotics and Automation}{ICRA 2021}{DOT (Dynamic Object Tracking) is a front-end that combines instance segmentation and multi-view geometry to generate masks for dynamic objects in order to improve the accuracy and robustness of SLAM. As  DOT includes short-term mask tracking, we avoid the segmentation of all frames in the sequence, with significant savings in computation.}\\
+%     \cvPublication{2021}{Lukas Meyer*, Michal Smisek, Alejandro Fontan, et al., The MADMAX data set for visual-inertial rover navigation on Mars.}{Journal of Field Robotics}{JFR 2021}{This dataset consists of 36 different navigation experiments, captured at eight Mars analogue sites with the compact human-portable DLR Sensoric Unit of Planetary Exploration Rovers in the Moroccan desert. This dataset contains time-stamped recordings from monochrome stereo cameras, RGB camera, omnidirectional cameras and IMU.}\\
+% \end{tabular}
+% \vspace{3em}
+
+% \vfill{} % Whitespace before final footer
+
+% %----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+% \setlength{\parindent}{0pt}
+% \begin{minipage}[t]{\rightcolwidth}
+% \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+% {\small fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} \small alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} \newline QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia \icon{\faPhone}{cvgreen}{} +61 /452 200 234}
+% \end{center}
+% \end{minipage}
+
+\end{paracol}
+
+\end{document}
