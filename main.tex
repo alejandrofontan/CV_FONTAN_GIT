@@ -8,13 +8,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 %\usepackage[margin=1cm, a4paper]{geometry}
-\usepackage[a4paper, top=1cm, bottom=0.0cm, left=1cm, right=1cm]{geometry}
+\usepackage[a4paper, top=1cm, bottom=0.1cm, left=1cm, right=1cm]{geometry}
 \usepackage[]{hyperref}
 \usepackage{xcolor}
 %\usepackage{graphicx}
 %\usepackage{fontawesome5}
 \usepackage{fontawesome}
 \usepackage{makecell}
+
+\usepackage{titlesec}
+% \titleformat{\section}
+%   {\normalfont\large\bfseries}  % change \large to any size
+%   {}{0em}{}
 
 \hypersetup{
     colorlinks,
@@ -95,13 +100,13 @@ Alejandro Fontan Villacampa
 
 \bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
 
-Visual SLAM ~/~  Localization ~/~ Visual Odometry ~/~ VPR
+Visual SLAM ~•~  Localization ~•~ Autonomous Navigation ~•~ Visual Odometry ~•~ VPR
 
 \bigskip
 
 \bg{cvgreen}{white}{Interests}\\[0.5em]
 
-Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
+Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning ~•~ Embodied AI
 
 \bigskip
 
@@ -112,9 +117,22 @@ Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
 {\href{https://scholar.google.com/citations?user=SDtnGogAAAAJ&hl=es}{Scholar}}
 \infobubble{\faTwitter}{cvgreen}{white}{\href{https://twitter.com/AFontanVillcmp}{@AFontanVillcmp}}
 
-\phantom{turn the page}
+\bigskip
 
-\phantom{turn the page}
+\bg{cvgreen}{white}{References}\\[0.5em]
+\href{michael.milford@qut.edu.au}{Michael Milford} \\
+ \href{jcivera@unizar.es}{Javier Civera}  \\
+\href{tobias.fischer@qut.edu.au}{Tobias Fischer} \\
+\href{Rudolph.Triebel@dlr.de}{Rudolph Triebel} \\
+ \href{markus.eder@wikitude.com}{Markus Eder}
+
+\bigskip
+
+\bg{cvgreen}{white}{Other Activities}\\[0.5em]
+IELTS Gen. Training (Score 8/9) \\
+First Aid Course \& CPR \\
+Professional Music Studies \\
+
 }
 %-----------------------------------------------------------
 \switchcolumn
@@ -122,12 +140,12 @@ Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
 \small
 \section*{Short Resumé}
 
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2022--2027}{Research Fellow}{Queensland University of Technology}{Brisbane, Australia \color{cvred}}{At the QUT Centre for Robotics, I lead research on Visual SLAM. Recent highlights include \textit{AnyFeature-VSLAM}, a flexible framework for integrating diverse feature types into SLAM pipelines, and a novel \textit{ground-truth-free tuning} method for robust SLAM/SfM evaluation. I also supervise PhD students and mentor our research team, focusing on Visual SLAM and Localization problems.\href{https://research.qut.edu.au/qcr/people/alejandro-fontan-villacampa/}{\hspace{0.5pt} \faUniversity \hspace{0.5pt} QUT Profile}}{qut.jpg} \\
-    \cvevent{2018--2022}{PhD Information-Driven Navigation - Associate Researcher}{German Aerospace Center (DLR) }{Munich, Germany \color{cvred}}{Pioneered \textit{Information-driven direct rgb-d odometry} and \textit{Semi-direct SID-SLAM} to improve visual odometry for mobile and aerial robots in planetary exploration. Deployed and evaluated on a custom DLR multicopter, contributing to its development as a research platform. \href{https://rmc.dlr.de/rm/en/staff/alejandro.fontanvillacampa/}{\hspace{0.5pt} \faPlane \hspace{0.5pt} DLR Profile}}{DLR_logo.png} \\
-    \cvevent{2017--2018}{Internship as Software Engineer}{Wikitude GmbH}{Salzburg, Austria \color{cvred}}{Developed a computer vision AR library for mobile OS like Android and iOS, focusing on implementing and testing on devices new visual-inertial SLAM algorithms, \textit{OKVIS} and \textit{VINS-Mono}. Created calibration solutions for phone cameras and IMUs' extrinsics. \href{https://www.wikitude.com/}{\hspace{0.5pt} \faMobile \hspace{0.5pt} Wikitude Webpage} }{wikitude-sdk.png}
+\begin{tabular}{r p{0.5\textwidth} c}
+    \cvevent{2022--2027}{Research Fellow}{Queensland University of Technology}{Brisbane, Australia \color{cvred}}{At the QCR, I lead research on Visual SLAM. Recent highlights include \textit{AllFeature-VSLAM}, a complete framework that tightly integrates diverse features, and a novel \textit{ground-truth-free tuning} method for SLAM/SfM. I also mentor PhD students and our research team in Localization tasks.\href{https://research.qut.edu.au/qcr/people/alejandro-fontan-villacampa/}{\hspace{0.5pt} \faUniversity \hspace{0.5pt} QUT}}{qut.jpg} \\
+    \cvevent{2018--2022}{PhD Information-Driven Navigation - Associate Researcher}{German Aerospace Center (DLR) }{Munich, Germany \color{cvred}}{Pioneered \textit{Information-driven direct rgb-d odometry} and \textit{Semi-direct SID-SLAM} to improve visual odometry for mobile and aerial robots in planetary exploration. Deployed and evaluated on a custom DLR multicopter, contributing to its development as a research platform. \href{https://rmc.dlr.de/rm/en/staff/alejandro.fontanvillacampa/}{\hspace{0.5pt} \faPlane \hspace{0.5pt} DLR}}{DLR_logo.png} \\
+    \cvevent{2017--2018}{Internship as Software Engineer}{Wikitude GmbH}{Salzburg, Austria \color{cvred}}{Developed a computer vision AR library for mobile OS like Android and iOS, focusing on implementing and evaluating egocentric visual-inertial SLAM algorithms on mobile devices, \textit{OKVIS} and \textit{VINS-Mono}. Created calibration solutions for phone cameras and IMUs' extrinsics. \href{https://www.wikitude.com/}{\hspace{0.5pt} \faMobile \hspace{0.5pt} Wikitude Webpage} }{wikitude-sdk.png}
 \end{tabular}
-\vspace{1em}
+\vspace{-1em}
 
 \begin{minipage}[t]{0.3\textwidth}
 \section*{Latest Projects}
@@ -135,8 +153,8 @@ Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
      \includegraphics[height=0.35cm]{logo_vslamlab.png} \href{https://github.com/alejandrofontan/VSLAM-LAB}{VSLAM-LAB}:  A Comprehensive Framework \\
      for Visual SLAM Baselines and Datasets. \href{https://github.com/alejandrofontan/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay}\\
      \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{AllFeature-VSLAM}: A Tightly Coupled \\ Multi-Feature Approach for Monocular SLAM \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{\faGithub} \\
-     \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{AnyFeature-VSLAM}:  Automating the Usage of \\ Any Chosen Feature into Visual SLAM \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub} \\
      \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{Bommie Toolkit}:  Automated 3D reconstruction \\tool for coral reefs \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\
+     \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{AnyFeature-VSLAM}:  Automating the Usage of \\ Any Chosen Feature into Visual SLAM \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub} \\
      \\
     \textbf{Workshop Organizer:} \\
     \href{https://alejandrofontan.github.io/Mapping-the-Reef-RSS26/}{Mapping-the-Reef@RSS26}: \textbf{1st Organizer} \\
@@ -146,19 +164,11 @@ Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
 \vspace{0.5em}
 \section*{Education}
 \begin{tabular}{r p{0.7\textwidth} c}
-    \cvdegree{\footnotesize 2025}{CV for Spatial Intelligence }{ICVSS}{Summer School \color{headerblue}}{}{icvss.jpeg} \\
-    \cvdegree{\footnotesize 2018/22}{PhD System Engineering and Programming} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\
+    \cvdegree{\footnotesize 2026}{Lecturer for \href{https://www.qut.edu.au/study/unit?unitCode=ENN584}{ENN584}}{\href{https://github.com/alejandrofontan/SLAM-Course}{SLAM-Course}}{\href{https://github.com/alejandrofontan/SLAM-Course}{\faGithub} \href{https://youtu.be/8yGr3u_jPlE}{\faYoutubePlay}}{}{qut.jpg} \\ [-8pt]
+    \cvdegree{\footnotesize 2025}{CV for Spatial Intelligence}{ICVSS}{Summer School \color{headerblue}}{}{icvss.jpeg} \\ [-8pt]
+    \cvdegree{\footnotesize 2018/22}{PhD System Engineering and Programming} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\ [-4pt]
     \cvdegree{\footnotesize 2011/17}{Degree \& Master \newline of Industrial Engineering}{EINA}{Univ. Zaragoza \color{headerblue}}{}{eina_logo.png}
 \end{tabular}
-\vspace{-0.75em}
-\section*{Programming}
-\begin{tabular}{r @{\hspace{0.6em}}l}
-     \bg{skilllabelcolour}{iconcolour}{C++ / Python} &  \bg{skilllabelcolour}{iconcolour}{ROS / Matlab/ \LaTeX}\\
-     \bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi} & \barrule{0.50}{0.5em}{cvgreen} \\
-     %\bg{skilllabelcolour}{iconcolour}{Matlab} & \barrule{0.4}{0.5em}{cvpurple} \\
-     %\bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.4}{0.5em}{cvpurple} \\
-\end{tabular}
-\vspace{0.5em}
 % \section*{Languages}
 % \begin{tabular}{l | ll}
 % \textbf{Spanish} & C2 & {\phantom{x}\footnotesize mother tongue} \\
@@ -182,17 +192,15 @@ Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
     JFR 21 & \emph{The MADMAX data set for visual‐inertial rover navigation on Mars}. \href{https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.22016}{\faFilePdfO} \\
    \makecell[c]{ CVPR 20 \\ Oral}& \makecell[l]{ \emph{Information-Driven Direct}\\ \emph{RGB-D Odometry.}}  \href{https://openaccess.thecvf.com/content_CVPR_2020/papers/Fontan_Information-Driven_Direct_RGB-D_Odometry_CVPR_2020_paper.pdf}{\faFilePdfO} \href{https://www.youtube.com/watch?v=Ja6QwYiKlu8}{\faYoutubePlay}
 \end{tabular}
-\vspace{1em}
-\section*{Other Activities}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    &\emph{IELTS Gen. Training (Score 8/9)}. \\
-    &\emph{First Aid Course \& CPR}. \\
-    &\emph{Professional Music Studies}. \\
-\end{tabular}
-\vspace{0.5em}
 \end{minipage}\hfill
 
-\vfill{} % Whitespace before final footer
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.6em}}l @{\hspace{0.6em}}l @{\hspace{0.6em}}l @{\hspace{0.6em}}l}
+     \bg{skilllabelcolour}{iconcolour}{C++ / Python} & \bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA} & \bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun} & \bg{skilllabelcolour}{iconcolour}{ONNX}\\
+     \bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi} & \bg{skilllabelcolour}{iconcolour}{ROS / Isaac Sim} & \bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM} & \bg{skilllabelcolour}{iconcolour}{Matlab / \LaTeX}& \\
+\end{tabular}\hfill
+\vspace{1.5em}
+\vfill{}
 
 \setlength{\parindent}{0pt}
 \begin{minipage}[t]{\rightcolwidth}
@@ -200,6 +208,10 @@ Computer Vision ~•~ Robotics ~•~ AR/VR ~•~ Machine Learning
 {\small fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} \small alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} \newline QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia \icon{\faPhone}{cvgreen}{} +61 /452 200 234}
 \end{center}
 \end{minipage}
+
+% \vspace{0.5cm}
+ % Whitespace before final footer
+
 
 % \section*{Curriculum}
 % \begin{tabular}{r| p{0.5\textwidth} c}
