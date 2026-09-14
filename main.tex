@@ -40,9 +40,9 @@
 \setlength{\rightcolwidth}{0.75\textwidth}
 
 %------------------------------------------------------------------
-\title{New Simple CV}
-\author{\LaTeX{} Ninja}
-\date{June 2019}
+%\title{New Simple CV}
+%\author{\LaTeX{} Ninja}
+%\date{June 2019}
 
 \pagestyle{empty}
 \begin{document}
@@ -93,7 +93,7 @@
 
 \bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
 
-Visual SLAM ~•~  Localization ~•~ Autonomous Navigation ~•~ Visual Odometry ~•~ VPR
+Visual SLAM ~•~ State Estimation ~•~ 3D Reconstruction ~•~  Visual-Inertial Odometry ~•~ Gaussian Splatting ~•~ Localization ~•~ VPR
 
 \bigskip
 
@@ -145,7 +145,7 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \begin{tabular}{r p{0.5\textwidth} c}
     \cvevent{2022--pres.}{Research Scientist | 3D Computer Vision \& Visual SLAM}{Queensland University of Technology}{Brisbane, Australia \color{cvred}}{At the QCR, I lead research on Visual SLAM. Recent highlights include \textit{AllFeature-VSLAM}, a complete framework that tightly integrates diverse features, and a novel \textit{ground-truth-free tuning} method for SLAM/SfM. I also mentor PhD students and our research team in Localization tasks.\href{https://research.qut.edu.au/qcr/people/alejandro-fontan-villacampa/}{\hspace{0.5pt} \faUniversity \hspace{0.5pt} QUT}}{qut.jpg}{-1.4} \\
     \cvevent{2018--2022}{PhD Researcher (Information-Driven Navigation)}{German Aerospace Center (DLR)}{Munich, Germany \color{cvred}}{Pioneered \textit{Information-driven direct RGB-D odometry} and \textit{Semi-direct SID-SLAM} to improve visual odometry for mobile and aerial robots in planetary exploration. Deployed and evaluated on a custom DLR multicopter, contributing to its development as a research platform. \href{https://rmc.dlr.de/rm/en/staff/alejandro.fontanvillacampa/}{\hspace{0.5pt} \faPlane \hspace{0.5pt} DLR}}{DLR_logo.png}{-1.2} \\
-    \cvevent{2017--2018}{Internship as Software Engineer}{Wikitude GmbH}{Salzburg, Austria \color{cvred}}{Developed a computer vision AR library for mobile OS like Android and iOS, focusing on implementing and evaluating egocentric visual-inertial SLAM algorithms on mobile devices, \textit{OKVIS} and \textit{VINS-Mono}. Created calibration solutions for phone cameras and IMUs' extrinsics. \href{https://www.wikitude.com/}{\hspace{0.5pt} \faMobile \hspace{0.5pt} Wikitude Webpage} }{wikitude-sdk.png}{-1.4}
+    \cvevent{2017--2018}{Software Engineering Intern}{Wikitude GmbH}{Salzburg, Austria \color{cvred}}{Developed a computer vision AR library for mobile OS like Android and iOS, focusing on implementing and evaluating egocentric visual-inertial SLAM algorithms on mobile devices, \textit{OKVIS} and \textit{VINS-Mono}. Created calibration solutions for phone cameras and IMUs' extrinsics. \href{https://www.wikitude.com/}{\hspace{0.5pt} \faMobile \hspace{0.5pt} Wikitude Webpage} }{wikitude-sdk.png}{-1.4}
 \end{tabular}
 \vspace{-1.0em}
 
@@ -167,8 +167,8 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \begin{tabular}{r p{0.55\textwidth} c}
     \cvdegree{\footnotesize 2026}{Lecturer for \href{https://www.qut.edu.au/study/unit?unitCode=ENN584}{ENN584}}{\href{https://github.com/alejandrofontan/SLAM-Course}{SLAM-Course}}{\href{https://github.com/alejandrofontan/SLAM-Course}{\faGithub} \href{https://youtu.be/8yGr3u_jPlE}{\faYoutubePlay}}{}{qut.jpg} \\ [-8pt]
     \cvdegree{\footnotesize 2025}{CV for Spatial Intelligence}{ICVSS}{Summer School \color{headerblue}}{}{icvss.jpeg} \\ [-8pt]
-    \cvdegree{\footnotesize 2018--22}{PhD System Engineering and Programming} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\ [-4pt]
-    \cvdegree{\footnotesize 2011--17}{Degree \& Master \newline of Industrial Engineering}{EINA}{Univ. Zaragoza \color{headerblue}}{}{eina_logo.png}
+    \cvdegree{\footnotesize 2018--22}{PhD in Systems Engineering and Computer Science} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\ [-4pt]
+    \cvdegree{\footnotesize 2011--17}{BSc \& MSc \newline in Industrial Engineering}{EINA}{Univ. Zaragoza \color{headerblue}}{}{eina_logo.png}
 \end{tabular}
 \end{minipage}\hspace{1em}\hfill
 \begin{minipage}[t]{0.37\textwidth}
@@ -184,7 +184,7 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
     \parbox[t]{0.20\linewidth}{\small\bfseries\centering RSS 24 \\ \href{https://www.roboticsproceedings.org/rss20/p084.pdf}{\faFilePdfO}~\href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub}} & \parbox[t]{0.68\linewidth}{\small\emph{AnyFeature-VSLAM: Automating the Usage of Any Feature into Visual SLAM}.} \\[24pt]
     \parbox[t]{0.20\linewidth}{\small\bfseries\centering ICRA 24 \\ \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10610433}{\faFilePdfO}} & \parbox[t]{0.68\linewidth}{\small\emph{Adaptive Outlier Thresholding for Bundle Adjustment in VSLAM}.} \\[12pt]
     \parbox[t]{0.20\linewidth}{\small\bfseries\centering BMVC 23 \\ \href{https://arxiv.org/pdf/2309.06792}{\faFilePdfO}} & \parbox[t]{0.68\linewidth}{\small\emph{Motion-Bias-Free Feature-Based SLAM}.} \\[12pt]
-    \parbox[t]{0.20\linewidth}{\small\bfseries\centering RA-L 23 \\ \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10058038}{\faFilePdfO}} & \parbox[t]{0.68\linewidth}{\small\emph{SID-SLAM Semi-Direct Information Driven RGB-D SLAM}.} \\[12pt]
+    \parbox[t]{0.20\linewidth}{\small\bfseries\centering RA-L 23 \\ \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10058038}{\faFilePdfO}} & \parbox[t]{0.68\linewidth}{\small\emph{SID-SLAM: Semi-Direct Information-Driven RGB-D SLAM}.} \\[12pt]
     \parbox[t]{0.20\linewidth}{\small\bfseries\centering RA-L 22 \\ \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9681286}{\faFilePdfO}} & \parbox[t]{0.68\linewidth}{\small\emph{A Model for Multi-View Residual Covariances based on Perspective Deformation}.} \\[24pt]
     \parbox[t]{0.20\linewidth}{\small\bfseries\centering ICRA 21 \\ \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9561452}{\faFilePdfO}~\href{https://youtu.be/9hWChyQGKJk?si=OkMBDGbpk28x3HI9}{\faYoutubePlay}} & \parbox[t]{0.68\linewidth}{\small\emph{DOT: Dynamic Object Tracking}.} \\[12pt]
     \parbox[t]{0.20\linewidth}{\small\bfseries\centering JFR 21 \\ \href{https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.22016}{\faFilePdfO}} & \parbox[t]{0.68\linewidth}{\small\emph{The MADMAX data set for visual-inertial rover navigation on Mars}.} \\[12pt]
@@ -196,9 +196,9 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \section*{Programming}
 \begin{tabular}{r @{\hspace{0.6em}}l @{\hspace{0.6em}}l @{\hspace{0.6em}}l @{\hspace{0.6em}}l}
      \bg{skilllabelcolour}{iconcolour}{C++ / Python} & \bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA} & \bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun} & \bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT}\\
-     \bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi} & \bg{skilllabelcolour}{iconcolour}{ROS1 / ROS2} & \bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM} & \bg{skilllabelcolour}{iconcolour}{Matlab / \LaTeX / Git}& \\
+     \bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi} & \bg{skilllabelcolour}{iconcolour}{ROS1 / ROS2} & \bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM} & \bg{skilllabelcolour}{iconcolour}{MATLAB / \LaTeX / Git}& \\
 \end{tabular}\hfill
-{\scriptsize\color{black!60} \href{https://github.com/alejandrofontan/Data-Structures-Algorithms}{Data Structures \& Algorithms \faGithub} — 186 LeetCode problems solved (73 Easy ~·~ 105 Medium ~·~ 8 Hard)} \par
+{\scriptsize\color{black!60} \href{https://github.com/alejandrofontan/Data-Structures-Algorithms}{Data Structures \& Algorithms \faGithub} — 196 LeetCode problems solved (73 Easy ~·~ 110 Medium ~·~ 13 Hard)} \par
 \setlength{\parindent}{0pt}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
 {\small fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} \small alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} \newline QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia}
@@ -211,7 +211,7 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 %------------------------------------------------------------------
 \newpage
 
-\section*{Publications \small{\normalfont — 401 citations · h-index 9 (\href{https://scholar.google.com/citations?user=SDtnGogAAAAJ}{Google Scholar}, Aug.\ 2026)}}
+\section*{Publications \small{\normalfont — 406 citations · h-index 9 (\href{https://scholar.google.com/citations?user=SDtnGogAAAAJ}{Google Scholar}, Sep.\ 2026)}}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.82\textwidth}}
     ICUAS 26 & \emph{Aerial Visual Place Recognition in Antarctica: Towards Robust Monitoring in Extreme Environments}. \href{https://ieeexplore.ieee.org/abstract/document/11598716/}{\faFilePdfO} \\
     arXiv 26 & \emph{Long-Term Multi-Session 3D Reconstruction Under Substantial Appearance Change}. \href{https://arxiv.org/abs/2602.20584}{\faFilePdfO} \\
@@ -242,10 +242,10 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \small
 \section*{Open-Source Software}
 \begin{tabular}{p{0.95\textwidth}}
-    \textbf{\href{https://github.com/VSLAM-LAB/VSLAM-LAB}{VSLAM-LAB}} {\scriptsize\color{black!60}(\faStar~500+ · \faCodeFork~69)} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi}~\bg{skilllabelcolour}{iconcolour}{ROS1 / ROS2}} — Unified, Pixi-based framework to compile, run, and evaluate 13+ Visual SLAM baselines (ORB-SLAM2/3, DROID-SLAM, MASt3R-SLAM, AllFeature/AnyFeature-VSLAM, DPVO, MonoGS, VGGT-SLAM, PyCuVSLAM, \ldots) across 38+ datasets from a single command line; per-baseline Pixi environments isolate conflicting CUDA/dependency stacks, and a config-driven pipeline standardizes dataset formatting, execution, and evaluation for one-command, reproducible benchmarks. Lead developer. \href{https://arxiv.org/abs/2504.04457}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} tutorials \& demos: \href{https://youtu.be/BCVkhITwjO0}{Intro @ IROS 25} ~·~ \href{https://youtu.be/THnn8FFAomI}{Setup in under 2 min} ~·~ \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/c0NDah8Vn-U}{PyCuVSLAM on ROVER}} \\[0.5em]
-    \textbf{\href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{Self-Supervised Deep SLAM Fine-Tuning}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA}} — Fine-tuning DROID-SLAM's ConvGRU update operator (global-context gate, correlation volume) inside its differentiable SE3 Bundle Adjustment layer, on real sensor data; fixed a bug where missing-depth pixels ($\leq$64\% of a frame on real sensors) were silently treated as confident supervision. Builds on our ground-truth-free tuning methodology (\emph{Look Ma, No Ground Truth!}), replacing mocap ground truth with an image-perturbation sensitivity signal that correlates with true ATE — enabling self-supervised fine-tuning on unlimited unlabeled video. Cut mean ATE by $\sim$45\% on ETH3D-SLAM. \href{https://arxiv.org/pdf/2412.01116}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{\faGithub} \\[0.5em]
-    \textbf{\href{https://github.com/alejandrofontan/AllFeature-VSLAM}{AllFeature-VSLAM}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM}~\bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT}} — Real-time monocular SLAM that tightly couples heterogeneous binary and learned feature descriptors (ORB, AKAZE, BRISK, SIFT, KAZE, ALIKED, SuperPoint) within a single joint map and bundle adjustment, instead of committing to one feature per pipeline; TensorRT-accelerated LightGlue matching for learned features. Outperforms ORB-SLAM2/3 and deep-learned VO (DROID-VO, DPVO) on EuRoC and TUM-RGBD. Lead developer. \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} demos: \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/ELCTRy_WFqw}{Marine Conservation} ~·~ \href{https://youtu.be/1ICEaH_rx2s}{on the MADMAX Data Set}} \\[0.5em]
-    \textbf{\href{https://github.com/BommieToolkit/BommieToolkit}{Bommie Toolkit}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun}} — End-to-end pipeline for long-term coral reef monitoring: stereo rig calibration (Kalibr), video-to-COLMAP structure-from-motion with SAM-based masking, and Gaussian Splatting reconstruction (nerfstudio), with refraction removal for underwater capture. Built with Pixi; co-developed with Emilio Olivastri. \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\
+    \textbf{\href{https://github.com/VSLAM-LAB/VSLAM-LAB}{VSLAM-LAB}} {\scriptsize\color{black!60}(\faStar~550+ · \faCodeFork~69)} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi}~\bg{skilllabelcolour}{iconcolour}{ROS1 / ROS2}} — Unified, Pixi-based framework to compile, run, and evaluate 13+ Visual SLAM baselines (ORB-SLAM2/3, DROID-SLAM, MASt3R-SLAM, AllFeature/AnyFeature-VSLAM, DPVO, MonoGS, VGGT-SLAM, PyCuVSLAM, \ldots) across 38+ datasets from a single command line; per-baseline Pixi environments isolate conflicting CUDA/dependency stacks, and a config-driven pipeline standardizes dataset formatting, execution, and evaluation for one-command, reproducible benchmarks. Lead developer. \href{https://arxiv.org/abs/2504.04457}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} tutorials \& demos: \href{https://youtu.be/BCVkhITwjO0}{Intro @ IROS 25} ~·~ \href{https://youtu.be/THnn8FFAomI}{Setup in under 2 min} ~·~ \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/c0NDah8Vn-U}{PyCuVSLAM on ROVER}} \\[0.5em]
+    \textbf{\href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{Self-Supervised Deep SLAM Fine-Tuning}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA}} — Fine-tuning DROID-SLAM's ConvGRU update operator (global-context gate, correlation volume) and the differentiable SE(3) Bundle Adjustment layer, on real sensor data. Builds on our ground-truth-free tuning methodology (\emph{Look Ma, No Ground Truth!}), replacing mocap ground truth with an image-perturbation sensitivity signal that correlates with true ATE — enabling self-supervised fine-tuning on unlimited unlabeled video. \href{https://arxiv.org/pdf/2412.01116}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{\faGithub} \\[0.5em]
+    \textbf{\href{https://github.com/alejandrofontan/AllFeature-VSLAM}{AllFeature-VSLAM}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM}~\bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT}} — Real-time monocular SLAM that tightly couples heterogeneous classical and learned feature descriptors (ORB, AKAZE, BRISK, SIFT, KAZE, ALIKED, SuperPoint) within a single joint map and bundle adjustment, instead of committing to one feature per pipeline; TensorRT-accelerated LightGlue matching for learned features. Outperforms ORB-SLAM2/3 and deep-learned VO (DROID-VO, DPVO) on EuRoC and TUM-RGBD. Lead developer. \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} demos: \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/ELCTRy_WFqw}{Marine Conservation} ~·~ \href{https://youtu.be/1ICEaH_rx2s}{on the MADMAX Data Set}} \\[0.5em]
+    \textbf{\href{https://github.com/BommieToolkit/BommieToolkit}{Bommie Toolkit}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun}} — End-to-end Gaussian Splatting 3D reconstruction pipeline for long-term coral reef monitoring: stereo rig calibration (Kalibr), video-to-COLMAP structure-from-motion with SAM-based masking, and 3D reconstruction (nerfstudio), with refraction removal for underwater capture. Built with Pixi; co-developed with Emilio Olivastri. \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.42\textwidth}
