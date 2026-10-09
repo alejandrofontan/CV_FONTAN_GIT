@@ -8,7 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 %\usepackage[margin=1cm, a4paper]{geometry}
-\usepackage[a4paper, top=1cm, bottom=0.5cm, left=1cm, right=1cm]{geometry}
+\usepackage[a4paper, top=1cm, bottom=0.5cm, left=0.5cm, right=1cm]{geometry}
 \usepackage[]{hyperref}
 \usepackage{xcolor}
 %\usepackage{graphicx}
@@ -93,7 +93,7 @@
 
 \bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
 
-Visual SLAM ~•~ State Estimation ~•~ 3D Reconstruction ~•~  Visual-Inertial Odometry ~•~ Gaussian Splatting ~•~ Localization ~•~ VPR
+Visual SLAM ~•~ State Estimation ~•~ 3D Reconstruction ~•~ Multi-View Geometry ~•~ Deep Learning ~•~ Neural Networks ~•~ VIO ~•~ Gaussian Splatting ~•~ Information Theory •~ Optimization ~•~ Factor Graphs ~•~ Localization ~•~ VPR ~•~ Benchmarking ~•~ Teaching
 
 \bigskip
 
@@ -155,7 +155,7 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
      \href{https://github.com/VSLAM-LAB/VSLAM-LAB}{VSLAM-LAB}: comprehensive framework for Visual SLAM baselines \& datasets. \href{https://github.com/VSLAM-LAB/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \\
      \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{AllFeature-VSLAM}: tightly coupled multi-feature monocular SLAM. \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \\
      \href{https://github.com/BommieToolkit/BommieToolkit}{Bommie Toolkit}: automated 3D reconstruction for coral reefs. \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\
-     \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{AnyFeature-VSLAM}: automates using any chosen feature in Visual SLAM. \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub} \\
+     \href{https://github.com/alejandrofontan/placecell}{PlaceCell}: Keyframe lifecycle management tool for VSLAM. \href{https://github.com/alejandrofontan/placecell}{\faGithub} \\
      \\
      \textbf{Workshop Organizer:} \\
      \href{https://alejandrofontan.github.io/Mapping-the-Reef-RSS26/}{Mapping-the-Reef@RSS26} \textbf{(1st Org.)} \\
@@ -166,8 +166,8 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \section*{Education \& Teaching}
 \begin{tabular}{r p{0.55\textwidth} c}
     \cvdegree{\footnotesize 2026}{Lecturer for \href{https://www.qut.edu.au/study/unit?unitCode=ENN584}{ENN584}}{\href{https://github.com/alejandrofontan/SLAM-Course}{SLAM-Course}}{\href{https://github.com/alejandrofontan/SLAM-Course}{\faGithub} \href{https://youtu.be/8yGr3u_jPlE}{\faYoutubePlay}}{}{qut.jpg} \\ [-8pt]
-    \cvdegree{\footnotesize 2025}{CV for Spatial Intelligence}{ICVSS}{Summer School \color{headerblue}}{}{icvss.jpeg} \\ [-8pt]
-    \cvdegree{\footnotesize 2018--22}{PhD in Systems Engineering and Computer Science} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\ [-4pt]
+    \cvdegree{\footnotesize 2025}{CV for Spatial \newline Intelligence}{ICVSS}{Summer School \color{headerblue}}{}{icvss.jpeg} \\ [-8pt]
+    \cvdegree{\footnotesize 2018--22}{PhD in Systems \newline Engineering and \newline Computer Science} {Univ. Zaragoza}{DLR \color{headerblue}}{Advisor: Dr. Javier Civera \newline Co-Advisor: Dr. Rudolph Triebel}{logoUZ.png } \\ [-4pt]
     \cvdegree{\footnotesize 2011--17}{BSc \& MSc \newline in Industrial Engineering}{EINA}{Univ. Zaragoza \color{headerblue}}{}{eina_logo.png}
 \end{tabular}
 \end{minipage}\hspace{1em}\hfill
@@ -194,14 +194,17 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \end{minipage}\hfill
 \vspace{-1.0cm}
 \section*{Programming}
-\begin{tabular}{r @{\hspace{0.6em}}l @{\hspace{0.6em}}l @{\hspace{0.6em}}l @{\hspace{0.6em}}l}
-     \bg{skilllabelcolour}{iconcolour}{C++ / Python} & \bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA} & \bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun} & \bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT}\\
-     \bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi} & \bg{skilllabelcolour}{iconcolour}{ROS1 / ROS2} & \bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM} & \bg{skilllabelcolour}{iconcolour}{MATLAB / \LaTeX / Git}& \\
-\end{tabular}\hfill
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{r @{\hspace{0.3em}}l @{\hspace{0.3em}}l @{\hspace{0.3em}}l @{\hspace{0.3em}}l}
+     \bg{skilllabelcolour}{iconcolour}{C++ / Python} & \bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA} & \bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT} & \bg{skilllabelcolour}{iconcolour}{Conda packaging / Pixi} & \bg{skilllabelcolour}{iconcolour}{Rattler-build}\\
+     \bg{skilllabelcolour}{iconcolour}{GitHub Actions} & \bg{skilllabelcolour}{iconcolour}{Multi-threading} & \bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM} & \bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun} & \bg{skilllabelcolour}{iconcolour}{CMake} \\
+     \bg{skilllabelcolour}{iconcolour}{Deep Learning} & \bg{skilllabelcolour}{iconcolour}{Neural Networks} & \bg{skilllabelcolour}{iconcolour}{PyTorch3D / Kornia} & \bg{skilllabelcolour}{iconcolour}{MATLAB / \LaTeX / Git} & \bg{skilllabelcolour}{iconcolour}{ROS 1/2}\\
+    \end{tabular}%
+}\hfill
 {\scriptsize\color{black!60} \href{https://github.com/alejandrofontan/Data-Structures-Algorithms}{Data Structures \& Algorithms \faGithub} — 196 LeetCode problems solved (73 Easy ~·~ 110 Medium ~·~ 13 Hard)} \par
 \setlength{\parindent}{0pt}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} \small alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} \newline QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia}
+{\footnotesize fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia}
 \end{center}
 
 \end{paracol}
@@ -211,7 +214,7 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 %------------------------------------------------------------------
 \newpage
 
-\section*{Publications \small{\normalfont — 406 citations · h-index 9 (\href{https://scholar.google.com/citations?user=SDtnGogAAAAJ}{Google Scholar}, Sep.\ 2026)}}
+\section*{Publications \small{\normalfont — 416 citations · h-index 9 · i10-index 8 (\href{https://scholar.google.com/citations?user=SDtnGogAAAAJ}{Google Scholar}, Oct.\ 2026)}}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.82\textwidth}}
     ICUAS 26 & \emph{Aerial Visual Place Recognition in Antarctica: Towards Robust Monitoring in Extreme Environments}. \href{https://ieeexplore.ieee.org/abstract/document/11598716/}{\faFilePdfO} \\
     arXiv 26 & \emph{Long-Term Multi-Session 3D Reconstruction Under Substantial Appearance Change}. \href{https://arxiv.org/abs/2602.20584}{\faFilePdfO} \\
@@ -224,28 +227,29 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
     ICCVW 25 & \emph{FUSELOC: Fusing Global and Local Descriptors for Fast and Robust 2D-3D Matching in Visual Localization}. \href{https://arxiv.org/abs/2408.12037}{\faFilePdfO} \\
     arXiv 25 & \emph{Event-Based Visual Teach-and-Repeat via Fast Fourier-Domain Cross-Correlation}. \href{https://arxiv.org/abs/2509.17287}{\faFilePdfO} \\
     \colorbox{cvgreen!15}{arXiv 25} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{Look Ma, No Ground Truth! Ground-Truth-Free Tuning of Structure from Motion and Visual SLAM}. \href{https://arxiv.org/pdf/2412.01116}{\faFilePdfO}}} \\
-    WACV 24 & \emph{FocusTune: Tuning Visual Localization through Focus-Guided Sampling}. {\scriptsize\color{black!60}(32 citations)} \href{https://arxiv.org/abs/2311.02872}{\faFilePdfO} \\
-    \colorbox{cvgreen!15}{RSS 24} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{AnyFeature-VSLAM: Automating the Usage of Any Chosen Feature into Visual SLAM}. {\scriptsize\color{black!60}(14 citations)} \href{https://www.roboticsproceedings.org/rss20/p084.pdf}{\faFilePdfO} \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub}}} \\
+    WACV 24 & \emph{FocusTune: Tuning Visual Localization through Focus-Guided Sampling}. \href{https://arxiv.org/abs/2311.02872}{\faFilePdfO} \\
+    \colorbox{cvgreen!15}{RSS 24} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{AnyFeature-VSLAM: Automating the Usage of Any Chosen Feature into Visual SLAM}. \href{https://www.roboticsproceedings.org/rss20/p084.pdf}{\faFilePdfO} \href{https://github.com/alejandrofontan/AnyFeature-VSLAM}{\faGithub}}} \\
     ICRA 24 & \emph{Adaptive Outlier Thresholding for Bundle Adjustment in Visual SLAM}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10610433}{\faFilePdfO} \\
     RA-L 24 & \emph{Forward Prediction of Target Localization Failure through Pose Estimation Artifact Modelling}. \\
-    RA-L 23 & \emph{SID-SLAM: Semi-Direct Information-Driven RGB-D SLAM}. {\scriptsize\color{black!60}(20 citations)} \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10058038}{\faFilePdfO} \\
+    RA-L 23 & \emph{SID-SLAM: Semi-Direct Information-Driven RGB-D SLAM}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10058038}{\faFilePdfO} \\
     BMVC 23 & \emph{Motion-Bias-Free Feature-Based SLAM}. \href{https://arxiv.org/pdf/2309.06792}{\faFilePdfO} \\
     RA-L 22 & \emph{A Model for Multi-View Residual Covariances based on Perspective Deformation}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9681286}{\faFilePdfO} \\
-    ICRA 21 & \emph{DOT: Dynamic Object Tracking for Visual SLAM}. {\scriptsize\color{black!60}(133 citations)} \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9561452}{\faFilePdfO} \href{https://youtu.be/9hWChyQGKJk?si=OkMBDGbpk28x3HI9}{\faYoutubePlay} \\
-    \colorbox{cvgreen!15}{JFR 21} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{The MADMAX Data Set for Visual-Inertial Rover Navigation on Mars}. {\scriptsize\color{black!60}(92 citations)} \href{https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.22016}{\faFilePdfO}}} \\
-    IAC 21 & \emph{Preliminary Results for the Multi-Robot, Multi-Partner, Multi-Mission, Planetary Exploration Analogue Campaign on Mount Etna}. {\scriptsize\color{black!60}(17 citations)} \\
-    \colorbox{cvgreen!15}{CVPR 20} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{Information-Driven Direct RGB-D Odometry}. \textbf{Oral presentation.} {\scriptsize\color{black!60}(41 citations)} \href{https://openaccess.thecvf.com/content_CVPR_2020/papers/Fontan_Information-Driven_Direct_RGB-D_Odometry_CVPR_2020_paper.pdf}{\faFilePdfO} \href{https://www.youtube.com/watch?v=Ja6QwYiKlu8}{\faYoutubePlay}}} \\
+    ICRA 21 & \emph{DOT: Dynamic Object Tracking for Visual SLAM}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9561452}{\faFilePdfO} \href{https://youtu.be/9hWChyQGKJk?si=OkMBDGbpk28x3HI9}{\faYoutubePlay} \\
+    \colorbox{cvgreen!15}{JFR 21} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{The MADMAX Data Set for Visual-Inertial Rover Navigation on Mars}. \href{https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.22016}{\faFilePdfO}}} \\
+    IAC 21 & \emph{Preliminary Results for the Multi-Robot, Multi-Partner, Multi-Mission, Planetary Exploration Analogue Campaign on Mount Etna}. \\
+    \colorbox{cvgreen!15}{CVPR 20} & \colorbox{cvgreen!15}{\parbox{0.97\linewidth}{\emph{Information-Driven Direct RGB-D Odometry}. \textbf{Oral presentation.} \href{https://openaccess.thecvf.com/content_CVPR_2020/papers/Fontan_Information-Driven_Direct_RGB-D_Odometry_CVPR_2020_paper.pdf}{\faFilePdfO} \href{https://www.youtube.com/watch?v=Ja6QwYiKlu8}{\faYoutubePlay}}} \\
 \end{tabular}
 
-\vspace{1.2em}
+\vspace{0.4em}
 \begin{minipage}[t]{0.54\textwidth}
 \small
 \section*{Open-Source Software}
 \begin{tabular}{p{0.95\textwidth}}
-    \textbf{\href{https://github.com/VSLAM-LAB/VSLAM-LAB}{VSLAM-LAB}} {\scriptsize\color{black!60}(\faStar~550+ · \faCodeFork~69)} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Anaconda / Pixi}~\bg{skilllabelcolour}{iconcolour}{ROS1 / ROS2}} — Unified, Pixi-based framework to compile, run, and evaluate 13+ Visual SLAM baselines (ORB-SLAM2/3, DROID-SLAM, MASt3R-SLAM, AllFeature/AnyFeature-VSLAM, DPVO, MonoGS, VGGT-SLAM, PyCuVSLAM, \ldots) across 38+ datasets from a single command line; per-baseline Pixi environments isolate conflicting CUDA/dependency stacks, and a config-driven pipeline standardizes dataset formatting, execution, and evaluation for one-command, reproducible benchmarks. Lead developer. \href{https://arxiv.org/abs/2504.04457}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/VSLAM-LAB}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} tutorials \& demos: \href{https://youtu.be/BCVkhITwjO0}{Intro @ IROS 25} ~·~ \href{https://youtu.be/THnn8FFAomI}{Setup in under 2 min} ~·~ \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/c0NDah8Vn-U}{PyCuVSLAM on ROVER}} \\[0.5em]
-    \textbf{\href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{Self-Supervised Deep SLAM Fine-Tuning}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA}} — Fine-tuning DROID-SLAM's ConvGRU update operator (global-context gate, correlation volume) and the differentiable SE(3) Bundle Adjustment layer, on real sensor data. Builds on our ground-truth-free tuning methodology (\emph{Look Ma, No Ground Truth!}), replacing mocap ground truth with an image-perturbation sensitivity signal that correlates with true ATE — enabling self-supervised fine-tuning on unlimited unlabeled video. \href{https://arxiv.org/pdf/2412.01116}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{\faGithub} \\[0.5em]
-    \textbf{\href{https://github.com/alejandrofontan/AllFeature-VSLAM}{AllFeature-VSLAM}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM}~\bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT}} — Real-time monocular SLAM that tightly couples heterogeneous classical and learned feature descriptors (ORB, AKAZE, BRISK, SIFT, KAZE, ALIKED, SuperPoint) within a single joint map and bundle adjustment, instead of committing to one feature per pipeline; TensorRT-accelerated LightGlue matching for learned features. Outperforms ORB-SLAM2/3 and deep-learned VO (DROID-VO, DPVO) on EuRoC and TUM-RGBD. Lead developer. \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} demos: \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/ELCTRy_WFqw}{Marine Conservation} ~·~ \href{https://youtu.be/1ICEaH_rx2s}{on the MADMAX Data Set}} \\[0.5em]
-    \textbf{\href{https://github.com/BommieToolkit/BommieToolkit}{Bommie Toolkit}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{OpenCV / Rerun}} — End-to-end Gaussian Splatting 3D reconstruction pipeline for long-term coral reef monitoring: stereo rig calibration (Kalibr), video-to-COLMAP structure-from-motion with SAM-based masking, and 3D reconstruction (nerfstudio), with refraction removal for underwater capture. Built with Pixi; co-developed with Emilio Olivastri. \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\
+    \textbf{\href{https://github.com/VSLAM-LAB/VSLAM-LAB}{VSLAM-LAB}} {\scriptsize\color{black!60}(\faStar~557+ · \faCodeFork~72)} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Conda Packaging / Pixi}~\bg{skilllabelcolour}{iconcolour}{rattler-build}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{GitHub Actions}~\bg{skilllabelcolour}{iconcolour}{CUDA}~\bg{skilllabelcolour}{iconcolour}{CMake}~\bg{skilllabelcolour}{iconcolour}{Benchmarking}~\bg{skilllabelcolour}{iconcolour}{ROS}} — Unified, Pixi-based framework to compile, run, and evaluate 15+ Visual SLAM baselines across 40+ datasets from a single command line. Pixi environments isolate conflicting CUDA/dependency stacks, and a config-driven pipeline standardizes dataset formatting, execution, and evaluation for one-command, reproducible benchmarks. Lead developer~\href{https://arxiv.org/abs/2504.04457}{\faFilePdfO}~\href{https://github.com/VSLAM-LAB/VSLAM-LAB}{\faGithub}~\href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} tutorials \& demos: \href{https://youtu.be/BCVkhITwjO0}{Intro @ IROS 25} ~·~ \href{https://youtu.be/THnn8FFAomI}{Setup in under 2 min} ~·~ \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/c0NDah8Vn-U}{PyCuVSLAM on ROVER}} \\[0.25em]
+    \textbf{\href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{Semi-Supervised Deep SLAM Fine-Tuning}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{Semi-Supervised Learning} \scriptsize\bg{skilllabelcolour}{iconcolour}{Deep SLAM / SfM} \scriptsize\bg{skilllabelcolour}{iconcolour}{Deep Learning}~\bg{skilllabelcolour}{iconcolour}{Neural Networks}~\scriptsize\bg{skilllabelcolour}{iconcolour}{PyTorch / CUDA}} — Fine-tuning DROID-SLAM's ConvGRU update operator and the differentiable SE(3) Bundle Adjustment layer, on real sensor data. Builds on our ground-truth-free tuning methodology (\emph{Look Ma, No Ground Truth!}), replacing mocap ground truth with an image-perturbation sensitivity signal that correlates with true ATE — enabling semi-supervised fine-tuning on unlimited unlabeled video. \href{https://arxiv.org/pdf/2412.01116}{\faFilePdfO} \href{https://github.com/VSLAM-LAB/DROID-SLAM-VSLAM-LAB}{\faGithub} \\[0.25em]
+    \textbf{\href{https://github.com/alejandrofontan/AllFeature-VSLAM}{AllFeature-VSLAM}} {\scriptsize\color{black!60}(\faStar~153+ · \faCodeFork~12)} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Ceres / g2o / GTSAM} \bg{skilllabelcolour}{iconcolour}{ONNX / Tensor-RT} \bg{skilllabelcolour}{iconcolour}{Multi-threading}~\bg{skilllabelcolour}{iconcolour}{Multi-View Geometry}} — Real-time (30\,Hz) monocular SLAM that tightly couples classical and learned feature descriptors (e.g. ORB, SIFT, ALIKED, SuperPoint) within a single joint map and bundle adjustment, instead of committing to one feature per pipeline; TensorRT-accelerated LightGlue matching for learned features. Outperforms ORB-SLAM2/3 and deep-learned VO (DROID-VO, DPVO). Lead developer. \href{https://github.com/alejandrofontan/AllFeature-VSLAM}{\faGithub} \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay} \newline {\scriptsize \href{https://www.youtube.com/@VSLAM-LAB}{\faYoutubePlay~@VSLAM-LAB} demos: \href{https://youtu.be/9m3a2EujvMY}{AllFeature / DROID / MASt3R-SLAM in Iceland} ~·~ \href{https://youtu.be/ELCTRy_WFqw}{Marine Conservation} ~·~ \href{https://youtu.be/1ICEaH_rx2s}{on the MADMAX Data Set}} \\[0.25em]
+    \textbf{\href{https://github.com/alejandrofontan/placecell}{PlaceCell}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{C++ / Python}~\bg{skilllabelcolour}{iconcolour}{Information Theory}~\bg{skilllabelcolour}{iconcolour}{Factor Graphs}~\bg{skilllabelcolour}{iconcolour}{Neural Networks} \bg{skilllabelcolour}{iconcolour}{Transformers}} — Keyframe lifecycle management for VSLAM and 3D reconstruction: a shared-information kernel between images decides which keyframes are inserted and culled. \href{https://github.com/alejandrofontan/placecell}{\faGithub} \\[0.25em]
+    \textbf{\href{https://github.com/BommieToolkit/BommieToolkit}{Bommie Toolkit}} {\scriptsize\bg{skilllabelcolour}{iconcolour}{3D Reconstruction}~\bg{skilllabelcolour}{iconcolour}{3D Geometry}~\bg{skilllabelcolour}{iconcolour}{SfM}~\bg{skilllabelcolour}{iconcolour}{Gaussian Splatting} \bg{skilllabelcolour}{iconcolour}{Camera Calibration}} — End-to-end Gaussian Splatting 3D reconstruction pipeline for long-term coral reef monitoring: stereo rig calibration (Kalibr), video-to-COLMAP structure-from-motion with SAM-based masking, and 3D reconstruction (nerfstudio), with refraction removal for underwater capture. \href{https://github.com/BommieToolkit/BommieToolkit}{\faGithub} \\
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.42\textwidth}
@@ -273,7 +277,7 @@ Scuba Diving ~•~ Piano ~•~ Trail Running ~•~ Films
 \vspace{1em}
 \setlength{\parindent}{0pt}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} \small alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} \newline QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia}
+{\footnotesize fontanvillacampa@gmail.com \icon{\faEnvelopeO}{cvgreen}{} alejandro.fontan@qut.edu.au \icon{\faEnvelopeO}{cvgreen}{} QUT \icon{\faMapMarker}{cvgreen}{} Brisbane, Australia}
 \end{center}
 
 \end{document}
